@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="light.css" id="theme">
+    <title>TODO App</title>
+</head>
+<body>
+    <h3>TODO</h3>
+    <button id="theme-btn">Change theme</button>
+    <button id="create-post-btn">Create Post</button>
+    <h4>Posts:</h4>
+
+    <div id="posts-container">
+        <div id="loader">
+            <h2>Загрузка...</h2>
+        </div>
+    </div>
+
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="post-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="body">Body:</label>
+                <textarea id="body" name="body" required></textarea>
+
+                <label for="userId">User:</label>
+                <select id="user-selector">
+
+                </select>
+
+                <!-- <input type="number" id="userId" name="userId" min="1" max="10" required> -->
+
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="delete-confirm" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Delete post?</p>
+            <button class="delete-post-btn">Delete</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
