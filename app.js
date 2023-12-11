@@ -12,7 +12,7 @@ $(document).ready(function() {
         localStorage.setItem("themeId", 1);
     }
 
-    // Fetch posts and render them
+    // Fetch posts and render them 222
     function RequestPosts() {
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/posts',
